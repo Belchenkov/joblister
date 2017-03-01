@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>JobLister</title>
+    <title><?= SITE_TITLE ?></title>
 </head>
 <body>
 
@@ -20,5 +20,5 @@
                     <li role="presentation"><a href="create.php">Создать список</a></li>
                 </ul>
             </nav>
-            <h3 class="text-muted">JobLister</h3>
+            <h3 class="text-muted"><?= SITE_TITLE ?></h3>
         </div>

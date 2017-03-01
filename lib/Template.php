@@ -1,5 +1,8 @@
 <?php
 
+namespace lib\Template;
+
+
 class Template
 {
     // Path to Template
