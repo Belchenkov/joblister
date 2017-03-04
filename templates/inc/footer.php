@@ -1,7 +1,7 @@
-<footer class="footer">
-    <p>&copy; 2017 JobLister, Inc.</p>
-</footer>
+			<footer class="footer">
+        <p>&copy; 2016 JobLister, Inc.</p>
+      </footer>
 
-</div> <!-- /container -->
-</body>
+    </div> <!-- /container -->
+		</body>
 </html>
