@@ -1,10 +1,19 @@
 <?php include 'inc/header.php'; ?>
       <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <h1>Найти работу</h1>
+          <form method="get" action="index.php">
+              <select name="category" class="form-control">
+                  <option value="0">Выберете категорию</option>
+                  <?php foreach($categories as $category) :?>
+                      <option value="<?= $category->id; ?>"><?= $category->name; ?></option>
+                  <?php endforeach; ?>
+              </select>
+              <br />
+              <input type="submit" class="btn btn-success btn-lg" value="Поиск" />
+          </form>
       </div>
 
+        <h3 id="search-info" class="text-center"><?= $title; ?></h3>
       	<?php foreach($jobs as $job): ?>
       	<div class="row marketing">
 	        <div class="col-md-10">
