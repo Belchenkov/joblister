@@ -1,14 +1,12 @@
 <?php include_once 'config/init.php'; ?>
 
 <?php
+$job = new Job;
 
-    $job = new Job;
+$template = new Template('templates/job-single.php');
 
-    $template = new Template('templates/job-single.php');
+$job_id = isset($_GET['id']) ? $_GET['id'] : null;
 
-    $job_id = !empty($_GET['id']) ? $_GET['id'] : null;
+$template->job = $job->getJob($job_id);
 
-    $template->job = $job->getJob($job_id);
-
-    echo $template;
-
+echo $template;
