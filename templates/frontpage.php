@@ -7,7 +7,7 @@
                   <?php foreach($categories as $category) :?>
                       <option value="<?= $category->id; ?>"><?= $category->name; ?></option>
                   <?php endforeach; ?>
-              </select>
+               </select>
               <br />
               <input type="submit" class="btn btn-success btn-lg" value="Поиск" />
           </form>
@@ -21,7 +21,7 @@
 	          <p><?php echo $job->description; ?></p>     
 	        </div>
 	        <div class="col-md-2">
-	        		<a class="btn btn-default" href="#">View</a>
+	        		<a class="btn btn-default" href="job.php?id=<?=$job->id; ?>">View</a>
 	        </div>
         </div>  
         <?php endforeach; ?>    
